@@ -7,3 +7,6 @@ before_script:
   - chmod a+x log.sh
   - "./log.sh"
 script: phpunit Test.php
+cache:
+  directories:
+    - ./cache

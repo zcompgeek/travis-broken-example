@@ -6,12 +6,10 @@ LINK="<a href=\"https://github.com/zcompgeek/travis-broken-example/compare/$TRAV
 echo $LINK
 
 if [! -e ./cache/salixHash]; then
-	mkdir ./cache
 	echo "123dse3" > ./cache/salixHash
-fi
-
+else 
 OLD=$(cat ./cache/salixHash)
-
 echo $OLD
+fi
 
 phpunit Test.php
