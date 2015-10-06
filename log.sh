@@ -8,8 +8,8 @@ echo $LINK
 if [! -e ./cache/salixHash]; then
 	echo "123dse3" > ./cache/salixHash
 else 
-OLD=$(cat ./cache/salixHash)
-echo $OLD
+	OLD=$(cat ./cache/salixHash)
+	echo $OLD
 fi
 
 phpunit Test.php
